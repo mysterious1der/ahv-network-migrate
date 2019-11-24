@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script to move all VM NICs from one network to another (online and preserving MAC addresses)
-# Author: Jirah Cox @Nutanix
+# Author: Jirah Cox @vJirah
 # With appreciation to Magnus and Arthur's script located at: https://github.com/magander3/misc/blob/master/AHV-VM-change_virtual_nic.sh
 #
 # This script is provided "as is", without warranty of any kind, express or implied, including but not limited to the 
