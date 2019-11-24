@@ -3,6 +3,12 @@
 # Author: Jirah Cox @Nutanix
 # With appreciation to Magnus and Arthur's script located at: https://github.com/magander3/misc/blob/master/AHV-VM-change_virtual_nic.sh
 #
+# This script is provided "as is", without warranty of any kind, express or implied, including but not limited to the 
+# warranties of merchantability, fitness for a particular purpose and noninfringement.
+# In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in
+# an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other
+# dealings in the software.
+#
 # Version 1.0 - Initial release
 
 clear
