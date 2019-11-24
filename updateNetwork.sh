@@ -83,13 +83,13 @@ if [ $confirmmove == "Y" ] || [ $confirmmove == "y" ]
 			# Null out some variables to make sure they're fresh for each loop
 			loopvmname=0
 			loopmacaddress=0
-			# Find the name of the VM in question since vm.nic_update wants a VM name to act on
+			# Find the name of the VM in question just for aesthetic display reasons
 			loopvmname=`/usr/local/nutanix/bin/acli vm.list | grep $uuid | awk -F' {2,}' '{print $1}'`
 			# Find the first MAC address (if multiple) of the VM in question on the network in question
 			loopmacaddress=`/usr/local/nutanix/bin/acli net.list_vms $oldvmnet | grep $loopvmname -m 1 | awk '{ print $3}'`
 			# Perform the NIC update
 			echo "Moving VM $loopvmname with MAC address $loopmacaddress"
-			/usr/local/nutanix/bin/acli vm.nic_update $loopvmname $loopmacaddress network=$newvmnet
+			/usr/local/nutanix/bin/acli vm.nic_update $uuid $loopmacaddress network=$newvmnet
 		done
 	else
 		echo
